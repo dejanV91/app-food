@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Food } from 'src/app/shared/models/Food';
 
 @Injectable({
   providedIn: 'root',
@@ -6,7 +7,11 @@ import { Injectable } from '@angular/core';
 export class FoodService {
   constructor() {}
 
-  getAll() {
+  getFoodById(foodId: number): Food {
+    return this.getAll().find((item) => item.id == foodId)!;
+  }
+
+  getAll(): Food[] {
     return [
       {
         id: 1,

@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.image img {
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.content {
+  padding: 50px;
+}
+
+.content .name {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favorite {
+  color: #e72929;
+}
+
+.favorite.not {
+  color: gray;
+}
+
+.content .stars {
+  margin-bottom: 20px;
+}
+
+.content .origins {
+  margin-bottom: 40px;
+}
+
+.content .origins span {
+  background-color: lightcyan;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.content .tags {
+  margin-bottom: 10px;
+}
+
+.content .tags span {
+  font-size: 1.1rem;
+  color: blue;
+  font-weight: 600;
+  background-color: rgb(236, 234, 234);
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.content .tags span:hover {
+  cursor: pointer;
+}
+.content .cook-time {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.content .cook-time span {
+  font-weight: 600;
+}
+
+.content .price {
+  margin-bottom: 40px;
+  color: green;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content .price::before {
+  content: "Price: ";
+  color: lightgray;
+}
+
+.content .add-button {
+  width: 100%;
+}
+
+.content .add-button button {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 0;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #e72929;
+  color: white;
+}
+
+.content .add-button button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
