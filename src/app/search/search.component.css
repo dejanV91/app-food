@@ -1,0 +1,32 @@
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+div input {
+  width: 20rem;
+  padding: 15px;
+  border: none;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+div button {
+  padding: 15px;
+  background-color: #e72929;
+  color: white;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0.8;
+}
+
+div button:hover {
+  cursor: pointer;
+  opacity: 1;
+}

@@ -7,10 +7,24 @@ import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { StarRatingModule } from 'angular-star-rating';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { SearchComponent } from './search/search.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomePageComponent, FoodPageComponent],
-  imports: [BrowserModule, AppRoutingModule, StarRatingModule.forRoot()],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomePageComponent,
+    FoodPageComponent,
+    SearchComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StarRatingModule.forRoot(),
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

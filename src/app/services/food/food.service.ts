@@ -7,6 +7,12 @@ import { Food } from 'src/app/shared/models/Food';
 export class FoodService {
   constructor() {}
 
+  getFoodBySearchTerm(searchTerm: string): Food[] {
+    return this.getAll().filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
+
   getFoodById(foodId: number): Food {
     return this.getAll().find((item) => item.id == foodId)!;
   }
