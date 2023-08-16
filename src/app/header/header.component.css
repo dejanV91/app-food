@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e72929;
+}
+
+div a {
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e72929;
+  text-decoration: none;
+}
+
+div a:hover {
+  cursor: pointer;
+  background-color: #e72929;
+  color: white;
+}
