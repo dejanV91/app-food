@@ -14,7 +14,9 @@
       <span *ngFor="let origin of food.origins">{{ origin }}</span>
     </div>
     <div class="tags">
-      <span *ngFor="let tag of food.tags">{{ tag }}</span>
+      <span routerLink="/tag/{{ tag }}" *ngFor="let tag of food.tags">{{
+        tag
+      }}</span>
     </div>
     <div class="cook-time">
       Time to cook about <span>{{ food.cookTime }}</span> minutes

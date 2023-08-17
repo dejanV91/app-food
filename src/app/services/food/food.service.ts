@@ -8,6 +8,13 @@ import { Tag } from 'src/app/shared/models/Tag';
 export class FoodService {
   constructor() {}
 
+  getFoodsByTag(tag: string): Food[] {
+    if (tag === 'All') {
+      return this.getAll();
+    }
+    return this.getAll().filter((food) => food.tags?.includes(tag));
+  }
+
   getAllTags(): Tag[] {
     return [
       { name: 'All', count: 14 },
