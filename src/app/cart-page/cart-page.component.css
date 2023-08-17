@@ -1,0 +1,80 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 4fr 250px;
+  column-gap: 20px;
+}
+
+.items {
+  border: 1px solid #e72929;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.items .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 15px 20px;
+  border-bottom: 1px solid #e72929;
+}
+
+.items .item div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+.items .item:last-child {
+  border-bottom: none;
+}
+
+.items .item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: fill;
+  border-radius: 10rem;
+}
+
+.items .item .quantity select {
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.items .item .price {
+  font-size: 1.8rem;
+}
+
+.items .item .remove-button button {
+  color: #e72929;
+  background-color: lightgray;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+}
+
+.items .item .remove-button button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.total {
+  border: 3px solid #e72929;
+  border-radius: 10px;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.total div::before {
+  content: "Count: ";
+  color: lightgray;
+}

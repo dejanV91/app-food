@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="items" *ngIf="cart && cart.items.length > 0">
+    <div class="item" *ngFor="let cartItem of cart.items">
+      <div class="image">
+        <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name" />
+      </div>
+      <div class="name">
+        {{ cartItem.food.name }}
+      </div>
+      <div class="quantity">
+        <select
+          #quanty
+          (change)="changeQuanity(cartItem, quanty.value)"
+          [value]="cartItem.quantity"
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="price">
+        {{ cartItem.price | currency }}
+      </div>
+      <div class="remove-button">
+        <button (click)="remove(cartItem.food.id)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div class="total">
+    <div>
+      {{ cart.items.length }}
+    </div>
+    <div>
+      {{ cart.price | currency }}
+    </div>
+  </div>
+</div>
