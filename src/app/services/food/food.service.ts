@@ -8,6 +8,10 @@ import { Tag } from 'src/app/shared/models/Tag';
 export class FoodService {
   constructor() {}
 
+  changeFavorite(food: Food) {
+    food.favorite = !food.favorite;
+  }
+
   getFoodsByTag(tag: string): Food[] {
     if (tag === 'All') {
       return this.getAll();

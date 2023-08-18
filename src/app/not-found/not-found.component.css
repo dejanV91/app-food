@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+div p {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+div a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: #e72929;
+  padding: 10px 20px;
+  color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+div a:hover {
+  opacity: 1;
+  cursor: pointer;
+}

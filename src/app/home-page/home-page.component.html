@@ -1,5 +1,12 @@
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-found
+  [visible]="!foods || !foods.length"
+  text="Not Found Food"
+  routerText="Go To Home"
+  link="/"
+>
+</app-not-found>
 <div class="container">
   <div
     class="item"
@@ -9,7 +16,12 @@
     <img [src]="food.imageUrl" alt="food.name" />
     <div class="name">
       <span> {{ food.name }} </span>
-      <div class="favorite {{ food.favorite ? '' : 'not' }}">❤</div>
+      <div
+        (click)="changeFavorite(food, $event)"
+        class="favorite {{ food.favorite ? '' : 'not' }}"
+      >
+        ❤
+      </div>
     </div>
     <div class="stars">
       <star-rating [starType]="'svg'" [rating]="food.stars"></star-rating>
