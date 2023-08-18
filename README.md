@@ -1,27 +1,42 @@
 # Food
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Food app enables quick food search, tagging-based filtering, and easy cart addition
 
-## Development server
+## Table Of Contents 📖
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Screenshots 🖼️](#screenshots-️)
+- [Links 📌](#links-)
+- [Your Process 📝](#your-process-)
+  - [Built with 🛠️](#built-with-️)
+  - [What you Learned 🗒️](#what-you-learned-️)
 
-## Code scaffolding
+## Screenshots 🖼️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![](src/assets/images/home-page.png)
 
-## Build
+## Links 📌
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Demo: **[Food](https://dejanv91.github.io/search-github-users)**
 
-## Running unit tests
+## Tools and goal 📝
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Built with 🛠️
 
-## Running end-to-end tests
+#### Frameworks:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- JavaScript: **Angular**
 
-## Further help
+#### Stack:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Language: **HTML5**, **CSS3**, **TypeScript**
+
+#### Package Manager:
+
+- _npm_
+
+### What you Learned 🗒️
+
+I gained hands-on experience with Angular while developing this application. 
+I focused on building responsive user interfaces, managing components effectively, and handling data flow within the app.
+
+ 
