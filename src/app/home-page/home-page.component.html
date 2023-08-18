@@ -16,12 +16,7 @@
     <img [src]="food.imageUrl" alt="food.name" />
     <div class="name">
       <span> {{ food.name }} </span>
-      <div
-        (click)="changeFavorite(food, $event)"
-        class="favorite {{ food.favorite ? '' : 'not' }}"
-      >
-        ❤
-      </div>
+      <div class="favorite {{ food.favorite ? '' : 'not' }}">❤</div>
     </div>
     <div class="stars">
       <star-rating [starType]="'svg'" [rating]="food.stars"></star-rating>

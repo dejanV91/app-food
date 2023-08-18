@@ -25,9 +25,4 @@ export class HomePageComponent {
       }
     });
   }
-
-  changeFavorite(food: Food, event: Event) {
-    this.foodService.changeFavorite(food);
-    event.stopPropagation();
-  }
 }
