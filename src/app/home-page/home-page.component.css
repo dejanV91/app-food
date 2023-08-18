@@ -5,13 +5,21 @@
   row-gap: 15px;
   column-gap: 10px;
   justify-content: center;
+  margin: auto;
   margin-bottom: 30px;
+  max-width: 1600px;
 }
 
 .container .item {
   border: 1px solid lightgrey;
   border-radius: 15px;
   height: auto;
+}
+
+@media (max-width: 380px) {
+  .container .item img {
+    width: 15rem;
+  }
 }
 
 .container .item:hover {

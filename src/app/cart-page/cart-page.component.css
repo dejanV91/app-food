@@ -8,6 +8,17 @@
   gap: 20px;
 }
 
+@media (max-width: 1100px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .items {
   border: 1px solid #e72929;
   border-radius: 10px;
@@ -81,4 +92,38 @@
 .total div::before {
   content: "Count: ";
   color: lightgray;
+}
+
+@media (max-width: 600px) {
+  .items {
+    width: 80%;
+    margin: auto;
+  }
+
+  .items .item {
+    flex-direction: column;
+  }
+
+  .items .item .name {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .items .item .quantity select {
+    margin-bottom: 30px;
+  }
+  .items .item .quantity::before {
+    content: "Quantity: ";
+    color: gray;
+  }
+
+  .items .item .price {
+    margin-bottom: 15px;
+  }
+
+  .total {
+    margin: auto;
+    width: 80%;
+  }
 }
