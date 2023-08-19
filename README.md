@@ -8,7 +8,7 @@ Food app enables quick food search, tagging-based filtering, and easy cart addit
 
 ## Links 📌
 
-Demo: **[Food](https://dejanv91.github.io/app-food/food/)**
+Demo: **[Food](https://dejanv91.github.io/app-food)**
 
 
 ## Built with 🛠️
